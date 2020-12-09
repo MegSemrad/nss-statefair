@@ -6,7 +6,7 @@ eventHub.addEventListener("click", clickEvent => {
        const rideEvent = new CustomEvent("rideTicketPurchsed")
        eventHub.dispatchEvent(rideEvent) 
     }
-}
+})
 
 export const TicketBooth = () => {
     contentTarget.innerHTML = `
