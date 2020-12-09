@@ -1,9 +1,11 @@
+import { TicketBooth } from './TicketBooth.js';
 import { RideTicketHolders } from './rides/RideTicketHolders.js';
-import { TicketBooth } from './TicketBooth.js'
+import { FoodTicketHolders } from './food/FoodTicketHolder.js';
 
 
 TicketBooth();
-RideTicketHolders()
+RideTicketHolders();
+FoodTicketHolders();
 
 /* Ask why RideTicketHolders needs to be imported if we don't 
 want it to populate the page when loads
