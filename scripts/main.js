@@ -4,7 +4,6 @@ import { foodTicketHolders } from './food/FoodTicketHolder.js';
 import { gameTicketHolders } from './games/GameTicketHolder.js';
 import { sideshowTicketHolders } from './sideshows/SideshowTicketHolders.js';
 
-
 ticketBooth();
 rideTicketHolders();
 foodTicketHolders();
@@ -14,3 +13,5 @@ sideshowTicketHolders();
 /* Ask why RideTicketHolders needs to be imported if we don't 
 want it to populate the page when loads
 */
+
+

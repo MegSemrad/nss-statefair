@@ -4,7 +4,7 @@ const eventHub = document.querySelector("#state-fair");
 export const sideshowTicketHolders = () => {
     eventHub.addEventListener("sideshowTicketPurchased", customEvent => {
         return contentTarget.innerHTMl += `
-        <div class="gawker person"></div>
+            <div class="gawker person"></div>
         `
     })
 };
