@@ -33,10 +33,10 @@ eventHub.addEventListener("click", clickEvent => {
     }
 });
 
-eventHub.addEventListener("click", clickEvent = () => {
+eventHub.addEventListener("click", clickEvent => {
     if(clickEvent.target.id === "fullPackageTicket") {
         const fullPackage = new CustomEvent ("fullPackageTicketPurchased")
-        eventHub.dispatchEvent("fullPackage")
+        eventHub.dispatchEvent(fullPackage)
     }
 });
 
@@ -52,3 +52,22 @@ export const ticketBooth = () => {
     `
 };
 
+
+/*
+Pseudo Code
+
+Objective : Need orange box to pop up in all four <div>s upon 
+button click 
+
+(Imagined) Way to Get there: 
+1. Need click event on "full package ticket" button [put 
+   in TicketBooth.js]
+2. Custom event dispatched which will be heard elsewhere
+
+3. Upon custom event being heard the colored boxes need to 
+   be added
+4. Import to main.js
+
+Note:
+have class of 'people' on each <div> where orange box will go 
+*/ 
