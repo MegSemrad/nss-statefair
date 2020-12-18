@@ -3,13 +3,8 @@ const eventHub = document.querySelector("#state-fair");
 
 export const sideshowTicketHolders = () => {
     eventHub.addEventListener("sideshowTicketPurchased", customEvent => {
-        return contentTarget.innerHTMl += `
+        return contentTarget.innerHTML += `
             <div class="gawker person"></div>
         `
     })
 };
-
-
-/*
-This module not working - cannot figure out why
-*/
